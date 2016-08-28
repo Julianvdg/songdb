@@ -2,9 +2,9 @@
 <table class="table-responsive highlight">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Created at</th>
+            <th><%= sortable "id" %></th>
+            <th><%= sortable "name" %></th>
+            <th><%= sortable "created_at" %></th>
         </tr>
     </thead>
     <% @artists.each do |artist| %>
