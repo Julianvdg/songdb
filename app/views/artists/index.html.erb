@@ -1,9 +1,17 @@
 <h1>All Artists</h1>
-<table>
+<table class="table-responsive highlight">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Created at</th>
+        </tr>
+    </thead>
     <% @artists.each do |artist| %>
     <tr>
         <td><%= artist.id %></td>
-        <td><%= artist.name %> </td>
+        <td><%= artist.name %></td>
+        <td><%= artist.created_at %></td>
     </tr>
     <% end %>
     
