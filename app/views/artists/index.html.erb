@@ -3,7 +3,6 @@
     <thead>
         <tr>
             <th>Image</th>
-            <th><%= sortable "id" %></th>
             <th><%= sortable "name" %></th>
             <th><%= sortable "created_at" %></th>
         </tr>
@@ -11,8 +10,7 @@
     <% @artists.each do |artist, id| %>
     <tr>
         <td><img src="<%= artist.image_url %>" class="circle"/></td>
-        <td><%= link_to artist_path(artist) do %><%= artist.id %><% end %></td>
-        <td><%= artist.name %></td>
+        <td><%= link_to artist_path(artist) do %><%= artist.name %><% end %></td>
         <td><%= artist.created_at %></td>
     </tr>
     <% end %>
